@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeSpa | Premium Wellness Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">Sylruth<span>Spa</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#booking">Book Now</a></li>
+                    <li><a href="#" id="login-btn">Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Add to customer dashboard -->
+    <section id="bookings-section" class="dashboard-section">
+        <div class="container">
+            <h2>My Bookings</h2>
+            <div class="bookings-controls">
+                <div class="filter-options">
+                    <button class="btn-filter active" data-filter="all">All</button>
+                    <button class="btn-filter" data-filter="upcoming">Upcoming</button>
+                    <button class="btn-filter" data-filter="past">Past</button>
+                </div>
+                <button class="btn" id="new-booking-btn">+ New Booking</button>
+            </div>
+            <div class="bookings-list">
+                <!-- Bookings will be inserted here by JavaScript -->
+                <div class="no-bookings">You don't have any bookings yet.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform your Physical look</h1>
+                <p>Welcome to our spa where we offer our services passionately for both genders all suiting our customer
+                    needs</p>
+                <a href="#booking" class="btn">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of wellness and beauty treatments</p>
+            </div>
+            <div class="services-grid" id="services-container">
+                <!-- Services with embedded images -->
+                <div class="service-item">
+                    <img src="https://img.freepik.com/premium-photo/masseur-pours-aromatic-oil-stones-stone-therapy-lying-back-interracial-cute-girl_120960-540.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Relaxing Massage">
+                    <h3>Relaxing Massage</h3>
+                    <p>Soothe your muscles and unwind with our classic massage techniques.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.freepik.com/premium-photo/black-woman-massage-face-luxury-spa-treatment-young-female-ready-facial-skincare-beauty-wellness-clinic-with-client-feeling-calm-zen-from-dermatology-cosmetic-chemical-peel_590464-142583.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Deep Cleansing Facial">
+                    <h3>Deep Cleansing Facial</h3>
+                    <p>Revitalize your skin with a deep cleanse and nourishing treatments.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://img.freepik.com/premium-photo/back-girl-covered-with-chocolate-after-massage_246930-422.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Aromatic Body Wrap">
+                    <h3>Aromatic Body Wrap</h3>
+                    <p>Indulge in a luxurious body wrap infused with essential oils.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>Explore our tranquil space and treatments</p>
+            </div>
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Gallery with embedded images -->
+                <img src="https://img.freepik.com/free-photo/stylist-woman-taking-care-her-client-afro-hair_23-2149259373.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Spa Gallery Image">
+                <img src="https://img.freepik.com/free-photo/young-african-american-man-visiting-barbershop_1157-47695.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Spa Gallery Image">
+                <img src="https://th.bing.com/th/id/OIP.QGyFdU-mlzwY4HvA8uq8IQHaFU?w=256&h=183&c=7&r=0&o=5&pid=1.7" alt="Spa Gallery Image">
+                <img src="https://th.bing.com/th/id/OIP.aV6WnYh0ALy8iu68RjoxwAHaKT?w=186&h=259&c=7&r=0&o=5&pid=1.7" alt="Spa Gallery Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Beauty Products</h2>
+                <p>Premium products for your home care routine</p>
+            </div>
+            <div class="products-grid" id="products-container">
+                <!-- Products with embedded images -->
+                <div class="product-item">
+                    <img src="https://img.freepik.com/free-vector/bokeh-background-luxurious-cosmetics_23-2147673186.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Luxury Body Lotion">
+                    <h3>Luxury Body Lotion</h3>
+                    <p>Hydrating body lotion with natural extracts.</p>
+                    <span class="price">$25.00</span>
+                    <button class="btn small-btn">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://img.freepik.com/premium-photo/back-girl-covered-with-chocolate-after-massage_246930-422.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Aromatic Body Wrap">
+                    <h3>Aromatic Body Wrap</h3>
+                    <p>Indulge in a luxurious body wrap infused with essential oils.</p>
+                    <span class="price">$35.00</span>
+                    <button class="btn small-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Skilled Team</h2>
+                <p>Meet our certified therapists and beauty specialists</p>
+            </div>
+            <div class="team-grid" id="team-container">
+                <!-- Team with embedded images -->
+                <div class="team-member">
+                    <img src="https://img.freepik.com/free-photo/young-african-american-woman-with-headband-posing_23-2148183427.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Ruth Muema">
+                    <h3>Ruth Muema</h3>
+                    <p>Lead Therapist</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://img.freepik.com/free-photo/side-view-anime-style-man-portrait_23-2151067412.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Sylvester Kamau">
+                    <h3>Sylvester Kamau</h3>
+                    <p>Massage Specialist</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://img.freepik.com/free-photo/smiling-young-afro-american-male-barber-wearing-uniform-looking-pointing-front-stretching-out-scissors-comb-towards_141793-117120.jpg?ga=GA1.1.1831898871.1744970776&semt=ais_hybrid&w=740" alt="Wayne Nane">
+                    <h3>Wayne Nane</h3>
+                    <p>Barber</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book an Appointment</h2>
+                <p>Schedule your perfect spa experience</p>
+            </div>
+            <div class="booking-form">
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <select id="service" required>
+                            <option value="">-- Select a service --</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="therapist">Preferred Therapist (optional)</label>
+                        <select id="therapist">
+                            <option value="">Any available therapist</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal" id="image-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Enlarged view">
+            <div id="image-caption"></div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="tabs">
+                <div class="tab active" data-tab="login">Login</div>
+                <div class="tab" data-tab="register">Register</div>
+            </div>
+            <div class="tab-content active" id="login">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label>Login As:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="client-login" name="user-type" value="client" checked>
+                            <label for="client-login">Client</label>
+                            <input type="radio" id="therapist-login" name="user-type" value="therapist">
+                            <label for="therapist-login">Therapist</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+            <div class="tab-content" id="register">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label>Register As:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="client-register" name="user-type" value="client" checked>
+                            <label for="client-register">Client</label>
+                            <input type="radio" id="therapist-register" name="user-type" value="therapist">
+                            <label for="therapist-register">Therapist</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">Phone Number</label>
+                        <input type="tel" id="reg-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-confirm">Confirm Password</label>
+                        <input type="password" id="reg-confirm" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Verification -->
+    <div class="modal" id="payment-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="verification">
+                <h3>Payment Verification</h3>
+                <p>Please enter your payment confirmation code below:</p>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <input type="text" id="payment-code" placeholder="Enter payment code" required>
+                    </div>
+                    <button type="submit" class="btn">Verify Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LuxeSpa</h3>
+                    <p>Providing premium wellness experiences since 2010. Our mission is to help you look and feel your
+                        best.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Karatina</li>
+                        <li><i class="fas fa-phone"></i> +254 712 345 678</li>
+                        <li><i class="fas mailto:fa-email"></i>clvesta321@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Friday: 9am - 8pm</li>
+                        <li>Saturday: 10am - 6pm</li>
+                        <li>Sunday: 11am - 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 SlyruthSpa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
